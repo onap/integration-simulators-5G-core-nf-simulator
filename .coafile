@@ -1,0 +1,17 @@
+[yaml]
+bears = YAMLLintBear
+yamllint_config = .yamllint
+ignore =
+  .tox/**
+
+[json]
+bears = JSONFormatBear
+json_sort = False
+indent_size = 2
+ignore =
+  .tox/**
+
+[md]
+bears = MarkdownBear
+ignore =
+  .tox/**
