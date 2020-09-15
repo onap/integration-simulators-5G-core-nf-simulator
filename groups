@@ -1,4 +1,5 @@
 # UUID                                                                                                      	Group Name
 #
 daebbf523be390041a1a9c0e340a6d833aae5043                                                                    	GitHub Replication
+ldap:cn=onap-gerrit-integration-committer,ou=Groups,dc=freestandards,dc=org                                 	ldap/onap-gerrit-integration-committer
 ldap:cn=onap-gerrit-integration-simulators-5G-core-nf-simulator-committers,ou=Groups,dc=freestandards,dc=org	ldap/onap-gerrit-integration-simulators-5G-core-nf-simulator-committers
