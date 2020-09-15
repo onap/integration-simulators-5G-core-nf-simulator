@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "77f2a755_4a3c29df",
+        "filename": ".gitreview",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 4677
+      },
+      "writtenOn": "2020-09-15T10:37:42Z",
+      "side": 1,
+      "message": "Could you delete this line",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 8
+      },
+      "revId": "7123d5445db5caba88f883d69fcba245030787ae",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
