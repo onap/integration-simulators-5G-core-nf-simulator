@@ -1,0 +1,9 @@
+Code-Review+1: Bartek Grzybowski <b.grzybowski@partner.samsung.com>
+Code-Review+1: Jessica Wagantall <jwagantall@linuxfoundation.org>
+Code-Review+2: Aric Gardner <agardner@linuxfoundation.org>
+Verified+1: Aric Gardner <agardner@linuxfoundation.org>
+Submitted-by: Aric Gardner <agardner@linuxfoundation.org>
+Submitted-at: Tue, 15 Sep 2020 18:44:05 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/integration/simulators/5G-core-nf-simulator/+/111595
+Project: integration/simulators/5G-core-nf-simulator
+Branch: refs/heads/master
