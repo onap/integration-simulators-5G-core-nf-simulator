@@ -1,0 +1,9 @@
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Code-Review+2: Bartek Grzybowski <b.grzybowski@partner.samsung.com>
+Code-Review+1: Morgan Richomme <morgan.richomme@orange.com>
+Code-Review+1: Bengt Thuree <bthuree@linuxfoundation.org>
+Submitted-by: Bartek Grzybowski <b.grzybowski@partner.samsung.com>
+Submitted-at: Wed, 16 Sep 2020 06:59:11 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/integration/simulators/5G-core-nf-simulator/+/111996
+Project: integration/simulators/5G-core-nf-simulator
+Branch: refs/heads/master
