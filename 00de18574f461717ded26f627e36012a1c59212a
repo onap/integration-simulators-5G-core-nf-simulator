@@ -1,0 +1,7 @@
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Code-Review+2: Thierry Hardy <thierry.hardy@orange.com>
+Submitted-by: Morgan Richomme <morgan.richomme@orange.com>
+Submitted-at: Wed, 25 Nov 2020 14:34:06 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/integration/simulators/5G-core-nf-simulator/+/115193
+Project: integration/simulators/5G-core-nf-simulator
+Branch: refs/heads/master
