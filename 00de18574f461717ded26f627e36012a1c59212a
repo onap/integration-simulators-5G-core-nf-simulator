@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cc4a5a30_b7394b7e",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 5622
+      },
+      "writtenOn": "2020-11-25T11:06:20Z",
+      "side": 1,
+      "message": "7280 and 7102 for others?",
+      "revId": "00de18574f461717ded26f627e36012a1c59212a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
