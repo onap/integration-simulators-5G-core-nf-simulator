@@ -20,10 +20,12 @@ ignore =
 bears = PyLintBear
 pylint_disable = all
 pylint_enable =
-  bad-indentation, trailing-whitespace, unused-wildcard-import, unused-import,
+  bad-indentation, trailing-whitespace, unused-import 
   unnecessary-semicolon, unnecessary-semicolon, undefined-variable,
-  syntax-error, unused-variable, using-constant-test,unused-argument,
-  len-as-condition, trailing-newlines, missing-final-newline, reimported,
-  too-many-function-args, singleton-comparison
+  syntax-error, unused-variable, using-constant-test, unused-argument,
+#  unused-wildcard-import 
+#  syntax-error, unused-variable, using-constant-test,unused-argument,
+#  len-as-condition, trailing-newlines, missing-final-newline, reimported,
+#  too-many-function-args, singleton-comparison
 ignore =
   .tox/**
