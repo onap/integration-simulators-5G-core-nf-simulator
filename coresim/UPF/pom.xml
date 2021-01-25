@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<!--
+================================================================================
+Copyright (c) 2017-2018 AT&T Intellectual Property. All rights reserved.
+================================================================================
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+============LICENSE_END=========================================================
+
+ECOMP is a trademark and service mark of AT&T Intellectual Property.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--   <parent>
+        <groupId>org.onap.oparent</groupId>
+        <artifactId>oparent</artifactId>
+        <version>2.0.0</version>
+    </parent> -->
+  <groupId>org.onap.vnfsdk.ves-agent</groupId>
+  <artifactId>evel_javalib2</artifactId>
+  <name>vnfsdk-ves-agent-vesjavalibrary</name>
+  <version>1.1.1-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <ves.git.url>${env.GIT_NO_PROJECT}</ves.git.url>
+        <ves.project.version>${project.version}</ves.project.version>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <dropwizard.version>1.1.1</dropwizard.version>
+        <logback.version>1.2.3</logback.version>
+        <swagger-core.version>1.5.8</swagger-core.version>
+
+        <ecomp.inceptionYear>2017</ecomp.inceptionYear>
+        <ecomp.organizationName>AT&amp;T Intellectual Property. All rights reserved.</ecomp.organizationName>
+
+        <maven.build.timestamp.format>yyyyMMdd'T'HHmmss'Z'</maven.build.timestamp.format>
+        <nexusproxy>https://nexus.onap.org</nexusproxy>
+        <snapshots.path>content/repositories/snapshots/</snapshots.path>
+        <releases.path>content/repositories/releases/</releases.path>
+        <site.path>content/sites/site/org/onap/vnfsdk-ves-agent/${project.version}/</site.path>
+        <snapshotNexusPath>content/repositories/snapshots/</snapshotNexusPath>
+        <releaseNexusPath>content/repositories/releases/</releaseNexusPath>
+        <stagingNexusPath>content/repositories/staging/</stagingNexusPath>
+        <sitePath>content/sites/site/org/onap/vnfsdk-ves-agent/${project.version}</sitePath>
+        <sonar.exclusions>src_test/evel_javalibrary/att/com/maindir/Main.java, src/test/java/*</sonar.exclusions>
+    </properties>
+
+
+    <repositories>
+            <repository>
+                    <id>ecomp-snapshots</id>
+                    <name>Snapshot Repository</name>
+                    <url>${nexusproxy}/${snapshotNexusPath}</url>
+            </repository>
+            <repository>
+                    <id>ecomp-staging</id>
+                    <name>Staging Repository</name>
+                    <url>${nexusproxy}/${stagingNexusPath}</url>
+            </repository>
+    </repositories>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.17</version>
+        </dependency>
+        <dependency>
+                <groupId>javax.json</groupId>
+                <artifactId>javax.json-api</artifactId>
+                <version>1.1</version>
+        </dependency>
+        <dependency>
+               <groupId>com.googlecode.json-simple</groupId>
+               <artifactId>json-simple</artifactId>
+               <version>1.1.1</version>
+       </dependency>
+        <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>1.7.5</version>
+        </dependency>
+        <dependency>
+                <groupId>org.glassfish</groupId>
+                <artifactId>javax.json</artifactId>
+                <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>2.0.2-beta</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>1.6.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
+            <version>1.6.5</version>
+            <scope>test</scope>
+    </dependency>
+    <dependency>
+	            <groupId>org.powermock</groupId>
+	            <artifactId>powermock-api-mockito</artifactId>
+	            <version>1.6.5</version>
+	            <scope>test</scope>
+	        </dependency>
+	        <dependency>
+	            <groupId>javax.xml.bind</groupId>
+	            <artifactId>jaxb-api</artifactId>
+	            <version>2.3.0</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.sun.xml.bind</groupId>
+	            <artifactId>jaxb-core</artifactId>
+	            <version>2.3.0</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.sun.xml.bind</groupId>
+	            <artifactId>jaxb-impl</artifactId>
+	            <version>2.3.0</version>
+	        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.9.1</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>src/gen/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>regex-property</id>
+                        <goals>
+                            <goal>regex-property</goal>
+                        </goals>
+                        <configuration>
+                            <name>docker.version</name>
+                            <value>${project.version}</value>
+                            <regex>(^[0-9]+.[0-9]+.[0-9]+$)</regex>
+                            <replacement>$1-STAGING</replacement>
+                            <failIfNoMatch>false</failIfNoMatch>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Package an Uber jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.4.3</version>
+                <executions>
+                    <!-- Run shade goal on package phase -->
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <!-- NOTE: Need the following transformer else gets "Could not resolve type id 'https' into a subtype" error
+                                Solution found from here:
+                                http://stackoverflow.com/questions/27543060/why-does-dropwizard-configuration-is-not-working
+                                Some more context here:
+                                https://github.com/dropwizard/dropwizard/issues/455 -->
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <!-- add Main-Class to manifest file -->
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>org.onap.dcae.inventory.InventoryApplication</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- This plugin may go away in favor of a custom Dockerfile provided by Carsten and co. -->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <configuration>
+                    <imageName>${onap.nexus.dockerregistry.daily}/onap/${project.groupId}.${project.artifactId}</imageName>
+                    <baseImage>openjdk:8-jre</baseImage>
+                    <entryPoint>["java", "-jar", "/opt/${project.build.finalName}.jar", "server"]</entryPoint>
+                    <resources>
+                        <resource>
+                            <targetPath>/opt</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                    <exposes>
+                        <expose>8080</expose>
+                    </exposes>
+                    <imageTags>
+                        <imageTag>${project.version}-${maven.build.timestamp}</imageTag>
+                        <imageTag>latest</imageTag>
+                    </imageTags>
+                    <serverId>${onap.nexus.dockerregistry.daily}</serverId>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.6</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.wagon</groupId>
+                        <artifactId>wagon-webdav-jackrabbit</artifactId>
+                        <version>2.10</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20.1</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>surefire-junit47</artifactId>
+                        <version>2.20.1</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Below was added from the instructions from Open eCOMP wiki page on p load javadoc to nexus -->
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <configuration>
+                    <failOnError>false</failOnError>
+                    <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
+                    <docletArtifact>
+                        <groupId>org.umlgraph</groupId>
+                        <artifactId>umlgraph</artifactId>
+                        <version>5.6</version>
+                    </docletArtifact>
+                    <additionalparam>-views</additionalparam>
+                    <useStandardDocletOptions>true</useStandardDocletOptions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>
