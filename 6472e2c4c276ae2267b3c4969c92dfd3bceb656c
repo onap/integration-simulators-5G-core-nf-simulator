@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d0992825_c271041a",
+        "filename": "coresim/AMF/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 5097
+      },
+      "writtenOn": "2021-03-08T12:09:23Z",
+      "side": 1,
+      "message": "Is it possible to use Integration project\u0027s baseline java or python images for this docker?",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 352
+      },
+      "revId": "6472e2c4c276ae2267b3c4969c92dfd3bceb656c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2192a571_0f3df079",
+        "filename": "coresim/SMF/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 5097
+      },
+      "writtenOn": "2021-03-08T12:09:23Z",
+      "side": 1,
+      "message": "Is it possible to use Integration project\u0027s baseline java or python images for this docker?",
+      "revId": "6472e2c4c276ae2267b3c4969c92dfd3bceb656c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8bbcd1f6_09d267a0",
+        "filename": "coresim/UPF/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 5097
+      },
+      "writtenOn": "2021-03-08T12:09:23Z",
+      "side": 1,
+      "message": "Is it possible to use Integration project\u0027s baseline java or python images for this docker?",
+      "revId": "6472e2c4c276ae2267b3c4969c92dfd3bceb656c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
