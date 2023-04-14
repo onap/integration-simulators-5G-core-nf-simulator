@@ -4,10 +4,10 @@ project_creation_date: '2020-03-30'
 project_category: ''
 lifecycle_state: 'Incubation'
 project_lead: &onap_integration_simulators_5G_core_nf_simulator_ptl
-    name: 'Michal Jagiello'
-    email: 'Michal.Jagiello@t-mobile.pl'
+    name: 'Marek Szwalkiewicz'
+    email: 'marek.szwalkiewicz@external.t-mobile.pl'
     company: 'T-Mobile'
-    id: 'MichalJagielloTMPL'
+    id: 'mszwalkiewicz'
     timezone: 'Europe/Warsaw'
 primary_contact: *onap_integration_simulators_5G_core_nf_simulator_ptl
 issue_tracking:
@@ -26,7 +26,7 @@ meetings:
       server: 'n/a'
       channel: 'n/a'
       repeats: 'weekly'
-      time: '14:00 UTC'
+      time: '13:00 UTC'
 repositories:
     - integration/simulators/5G-core-nf-simulator
 committers:
@@ -105,3 +105,6 @@ tsc:
           name: 'Morgan Richomme, Bartek Grzybowski, Illia Halych, Alexander Mazuruk,
               Maciej Lisowski, Marcin Sebastian Krasowski'
           link: 'https://lists.onap.org/g/onap-tsc/message/9017'
+        - type: 'Addition'
+          name: 'Marek Szwalkiewicz'
+          link: 'https://lists.onap.org/g/onap-tsc/message/9275'
